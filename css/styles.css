@@ -30,6 +30,33 @@ body {
 
 ul {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  width: 1200px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
 }
 
 /* ШАПКА */
@@ -38,9 +65,17 @@ header {
   background-color: var(--header-color);
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 /* logo */
 
 .logo {
+  /* margin-left: 215px; */
+
   color: var(--active-btn-color);
   font-family: raleway;
   font-weight: 700;
@@ -58,7 +93,22 @@ header {
 }
 
 /* nav */
+.head-nav {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 93px;
+}
+
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -66,12 +116,22 @@ header {
   color: var(--text-2-color);
   text-decoration: none;
 }
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--active-btn-color);
 }
 
+.nav li:not(:last-child),
+.contacts li:not(:last-child) {
+  margin-right: 50px;
+}
+
 /* contacts */
+.contacts {
+  display: flex;
+}
+
 .head-contacts {
   font-weight: 500;
   font-size: 14px;
@@ -87,11 +147,19 @@ header {
 }
 
 /* БАННЕР */
+
 .main {
   background-color: #2f303a;
+  margin-bottom: 0px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .main-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -102,6 +170,13 @@ header {
 }
 
 .main-title-btn {
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+
+  width: 200px;
+  height: 50px;
+
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -111,7 +186,14 @@ header {
   background-color: #2196f3;
 }
 
-/* Чем мы лучше */
+/* Чем мы лучше/Что делаем  */
+.pluses {
+  display: flex;
+}
+
+.pluses li:not(:last-child) {
+  margin-right: 30px;
+}
 
 .title-2 {
   font-weight: 700;
@@ -120,6 +202,17 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.none {
+  display: none;
+}
+
+.sect-2 {
+  padding-top: 0px;
 }
 
 .title-3 {
@@ -138,6 +231,13 @@ header {
   color: rgba(117, 117, 117, 1);
 }
 
+.work {
+  display: flex;
+}
+
+.work li:not(:last-child) {
+  margin-right: 30px;
+}
 /* КОМАНДА */
 .team {
   background-color: var(--foreground-color);
@@ -148,6 +248,9 @@ header {
   line-height: 19px;
   letter-spacing: 0.03em;
   color: #212121;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .prof {
@@ -155,11 +258,32 @@ header {
   line-height: 19px;
   letter-spacing: 0.03em;
   color: rgba(117, 117, 117, 1);
+
+  margin-bottom: 30px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list li {
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* ФУТЕР */
 footer {
   background-color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .foot-adr {
   font-size: 14px;
@@ -167,6 +291,9 @@ footer {
   letter-spacing: 0.03em;
   font-style: normal;
   color: #ffffff;
+
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .foot-cont {
@@ -175,6 +302,10 @@ footer {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-foot {
+  padding-bottom: 9px;
 }
 
 /* ПОРТФОЛИО */
