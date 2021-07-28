@@ -184,6 +184,7 @@ header {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Чем мы лучше/Что делаем  */
@@ -385,4 +386,5 @@ footer {
   letter-spacing: 0.03em;
   color: #757575;
   text-align: center;
+  margin-bottom: 20px;
 }
