@@ -309,13 +309,37 @@ footer {
 }
 
 /* ПОРТФОЛИО */
+.part-sect {
+  margin-top: 100px;
+}
+
+.portfolio_title {
+  display: none;
+}
+
+/* Фильтры */
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.filters li:not(:last-child) {
+  margin-right: 8px;
+}
 
 .filter-btn {
-  background-color: var(--background-color);
+  background-color: #f5f4fa;
   color: var(--text-2-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
+  cursor: pointer;
+
+  border-radius: 4px;
+  border: 0;
+
+  height: 38px;
 }
 
 .filter-btn:focus,
@@ -323,16 +347,42 @@ footer {
   background-color: var(--active-btn-color);
   color: var(--header-color);
 }
+
+/* Работы */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards li {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.cards li:nth-child(3n) {
+  margin-right: 0;
+}
+
 .port-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
   color: #212121;
+
+  text-align: center;
+  margin-bottom: 4px;
+  margin-top: 20px;
 }
 .port-text {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: center;
 }
