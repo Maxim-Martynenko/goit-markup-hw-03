@@ -373,6 +373,10 @@ footer {
   margin-right: 0;
 }
 
+.cards li:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
 .card-inf {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
