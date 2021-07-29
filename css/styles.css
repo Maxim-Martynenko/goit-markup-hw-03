@@ -63,7 +63,7 @@ p {
 
 header {
   background-color: var(--header-color);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
@@ -190,6 +190,9 @@ header {
 .pluses {
   display: flex;
 }
+.pluses li {
+  width: 270px;
+}
 
 .pluses li:not(:last-child) {
   margin-right: 30px;
@@ -249,7 +252,7 @@ header {
   letter-spacing: 0.03em;
   color: #212121;
 
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -258,8 +261,11 @@ header {
   line-height: 19px;
   letter-spacing: 0.03em;
   color: rgba(117, 117, 117, 1);
+}
 
-  margin-bottom: 30px;
+.team-inf {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list {
@@ -309,9 +315,6 @@ footer {
 }
 
 /* ПОРТФОЛИО */
-.part-sect {
-  margin-top: 100px;
-}
 
 .portfolio_title {
   display: none;
@@ -358,9 +361,9 @@ footer {
 
 .cards li {
   background: #ffffff;
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
   cursor: pointer;
+  width: 370px;
 
   margin-right: 30px;
   margin-bottom: 30px;
@@ -370,27 +373,23 @@ footer {
   margin-right: 0;
 }
 
+.card-inf {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+  text-align: left;
+}
+
 .port-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
   color: #212121;
-
-  text-align: left;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-bottom: 4px;
-  margin-top: 20px;
+  margin: 0 0 4px 0;
 }
 .port-text {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
-
-  text-align: left;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-bottom: 20px;
 }
